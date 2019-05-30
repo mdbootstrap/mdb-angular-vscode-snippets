@@ -1,0 +1,538 @@
+{
+  "MDB Button": {
+    "prefix": "a-mdb-button",
+    "body": [
+      "<button type=\"${1:button}\" mdbBtn color=\"${2:primary}\" mdbWavesEffect>$3</button>$4"
+    ],
+    "description": "MDB Button"
+  },
+  "MDB Card": {
+    "prefix": "a-mdb-card",
+    "body": [
+      "<mdb-card>",
+      "  <mdb-card-img src=\"${1:https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg}\" alt=\"$2\"></mdb-card-img>",
+      "  <mdb-card-body>",
+      "",
+      "    <mdb-card-title>",
+      "      <h4>$3</h4>",
+      "    </mdb-card-title>",
+      "",
+      "    <mdb-card-text>$4</mdb-card-text>",
+      "",
+      "    $5",
+      "  </mdb-card-body>",
+      "</mdb-card>$6"
+    ],
+    "description": "MDB Card"
+  },
+  "MDB Dropdown": {
+    "prefix": "a-mdb-dropdown",
+    "body": [
+      "<div class=\"btn-group\" mdbDropdown>",
+      "  <button mdbDropdownToggle type=\"button\" mdbBtn color=\"${1:primary}\" class=\"dropdown-toggle waves-light\"",
+      "    mdbWavesEffect>",
+      "    $2",
+      "  </button>",
+      "",
+      "  <div class=\"dropdown-menu dropdown-primary\">",
+      "    <a class=\"dropdown-item\" href=\"#\">$3</a>",
+      "  </div>",
+      "</div>$4"
+    ],
+    "description": "MDB Dropdown"
+  },
+  "MDB Material Dropdown": {
+    "prefix": "a-mdb-dropdown-material",
+    "body": [
+      "<div class=\"dropdown\" mdbDropdown>",
+      "",
+      "  <button mdbDropdownToggle mdbBtn color=\"${1:primary}\" class=\"dropdown-toggle waves-light\" type=\"button\"",
+      "    mdbWavesEffect>",
+      "    $2",
+      "  </button>",
+      "",
+      "  <div class=\"dropdown-menu dropdown-primary\">",
+      "    <a class=\"dropdown-item\" href=\"#\">$3</a>",
+      "  </div>",
+      "</div>$4"
+    ],
+    "description": "MDB Material Dropdown"
+  },
+  "MDB Jumbotron": {
+    "prefix": "a-mdb-jumbotron",
+    "body": [
+      "<div class=\"jumbotron\">",
+      "  <h1 class=\"display-4\">$1</h1>",
+      "  <p class=\"lead\">$2</p>",
+      "  <hr class=\"my-4\">",
+      "  <p>$3</p>",
+      "</div>$4"
+    ],
+    "description": "MDB Jumbotron"
+  },
+  "MDB List Group": {
+    "prefix": "a-mdb-list-group",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item\">$1</li>",
+      "</ul>$2"
+    ],
+    "description": "MDB List Group"
+  },
+  "MDB Spinner": {
+    "prefix": "a-mdb-spinner",
+    "body": [
+      "<div class=\"spinner-border ${1:text-primary}\" role=\"status\">",
+      "  <span class=\"sr-only\">${2:Loading...}</span>",
+      "</div>$3"
+    ],
+    "description": "MDB Spinner"
+  },
+  "MDB Material Spinner": {
+    "prefix": "a-mdb-spinner-material",
+    "body": [
+      "<mdb-spinner spinnerType=\"${1:big}\" spinnerColor=\"${2:blue}\"></mdb-spinner>$3"
+    ],
+    "description": "MDB Material Spinner"
+  },
+  "MDB Panel": {
+    "prefix": "a-mdb-panel",
+    "body": [
+      "<mdb-card>",
+      "  <mdb-card-body>",
+      "    <mdb-card-title>",
+      "      <h4>$1</h4>",
+      "    </mdb-card-title>",
+      "    <mdb-card-text>$2</mdb-card-text>",
+      "    <div class=\"flex-row\">",
+      "      $3",
+      "    </div>",
+      "  </mdb-card-body>",
+      "</mdb-card>$4"
+    ],
+    "description": "MDB Panel"
+  },
+  "MDB Pagination": {
+    "prefix": "a-mdb-pagination",
+    "body": [
+      "<nav aria-label=\"Page navigation example\">",
+      "  <ul class=\"pagination pg-blue\">",
+      "    <li class=\"page-item\"><a class=\"page-link\" mdbWavesEffect>Previous</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" mdbWavesEffect>1</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" mdbWavesEffect>2</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" mdbWavesEffect>3</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" mdbWavesEffect>Next</a></li>",
+      "  </ul>",
+      "</nav>$1"
+    ],
+    "description": "MDB Pagination"
+  },
+  "MDB Progress Bar": {
+    "prefix": "a-mdb-progress",
+    "body": [
+      "<div class=\"progress\">",
+      "  <div class=\"progress-bar\" role=\"progressbar\" style=\"width: ${1:25%}\" aria-valuenow=\"${2:25}\" aria-valuemin=\"${3:0}\" aria-valuemax=\"${4:100}\"></div>",
+      "</div>$5"
+    ],
+    "description": "MDB Progress Bar"
+  },
+  "MDB Material Progress Bar": {
+    "prefix": "a-mdb-progress-material",
+    "body": [
+      "<mdb-progress value=\"${1:25}\" min=\"${2:0}\" max=\"${3:100}\" aria-valuenow=\"${4:0}\" aria-valuemin=\"${5:0}\" aria-valuemax=\"${6:100}\"></mdb-progress>$7"
+    ],
+    "description": "MDB Material Progress Bar"
+  },
+  "MDB Tabset": {
+    "prefix": "a-mdb-tabset",
+    "body": [
+      "<mdb-tabset [buttonClass]=\"'md-tabs tabs-3'\" [contentClass]=\"'card'\">",
+      "$1",
+      "</mdb-tabset>"
+    ],
+    "description": "MDB Tabset"
+  },
+  "MDB Tab": {
+    "prefix": "a-mdb-tab",
+    "body": [
+      "  <mdb-tab heading=\"$1\">",
+      "    <div class=\"row\">",
+      "      <div class=\"${2:col-12}\">",
+      "        <br>",
+      "        <p>$3</p>",
+      "      </div>",
+      "    </div>",
+      "  </mdb-tab>$4"
+    ],
+    "description": "MDB Tab"
+  },
+  "MDB Badge": {
+    "prefix": "a-mdb-badge",
+    "body": [
+      "<mdb-badge color=\"${1:red}\">$2</mdb-badge>$3"
+    ],
+    "description": "MDB Badge"
+  },
+  "MDB Accordion": {
+    "prefix": "a-mdb-accordion",
+    "body": [
+      "<mdb-accordion [multiple]=\"${1|false,true|}\">",
+      "$2",
+      "</mdb-accordion>$3"
+    ],
+    "description": "MDB Accordion"
+  },
+  "MDB Accordion Item": {
+    "prefix": "a-mdb-accordion-item",
+    "body": [
+      "<mdb-accordion-item>",
+      "  <mdb-accordion-item-head>$1</mdb-accordion-item-head>",
+      "  <mdb-accordion-item-body>$2</mdb-accordion-item-body>",
+      "</mdb-accordion-item>$3"
+    ],
+    "description": "MDB Accordion Item"
+  },
+  "MDB Collapse": {
+    "prefix": "a-mdb-collapse",
+    "body": [
+      "<button mdbBtn color=\"primary\" class=\"waves-light\" type=\"button\" (click)=\"collapse.toggle()\" mdbWavesEffect>",
+      "  $1",
+      "</button>",
+      "",
+      "<div mdbCollapse #collapse=\"bs-collapse\">",
+      "  <p>$2</p>",
+      "</div>$3"
+    ],
+    "description": "MDB Collapse"
+  },
+  "MDB Basic Footer": {
+    "prefix": "a-mdb-footer-basic",
+    "body": [
+      "<footer class=\"page-footer font-small ${1:blue} pt-4$2\">",
+      "    <div class=\"container-fluid text-center text-md-left\">",
+      "      <div class=\"row\">",
+      "        <div class=\"col-md-6 mt-md-0 mt-3\">",
+      "          <h5 class=\"text-uppercase\">${3:Footer Content}</h5>",
+      "          <p>${4:Here you can use rows and columns here to organize your footer content.}</p>",
+      "        </div>",
+      "        <hr class=\"clearfix w-100 d-md-none pb-3\">",
+      "        <!-- Grid column -->",
+      "        <div class=\"col-md-3 mb-md-0 mb-3\">",
+      "            <h5 class=\"text-uppercase\">${5:Links}</h5>",
+      "            <ul class=\"list-unstyled\">",
+      "              <li>",
+      "                <a href=\"${7:#}\">${6:Link 1}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${9:#}\">${8:Link 2}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${11:#}\">${10:Link 3}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${13:#}\">${12:Link 4}</a>",
+      "              </li>",
+      "            </ul>",
+      "          </div>",
+      "          <div class=\"col-md-3 mb-md-0 mb-3\">",
+      "            <h5 class=\"text-uppercase\">${14:Links}</h5>",
+      "",
+      "            <ul class=\"list-unstyled\">",
+      "              <li>",
+      "                <a href=\"${16:#}\">${15:Link 1}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${18:#}\">${17:Link 2}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${20:#}\">${19:Link 3}</a>",
+      "              </li>",
+      "              <li>",
+      "                <a href=\"${22:#}\">${21:Link 4}</a>",
+      "              </li>",
+      "            </ul>",
+      "          </div>",
+      "      </div>",
+      "    </div>",
+      "    <div class=\"footer-copyright text-center py-3\">${23:© 2018 Copyright:}",
+      "      <a href=\"${25:https://mdbootstrap.com/education/angular/}\">${24:MDBootstrap.com}</a>",
+      "    </div>",
+      "  </footer>$26"
+    ],
+    "description": "MDB Basic Footer"
+  },
+  "MDB Hamburger Menu": {
+    "prefix": "a-mdb-hamburger-menu",
+    "body": [
+      "<mdb-navbar SideClass=\"navbar navbar-${1|ligth,dark|} ${2:blue}\" [containerInside]=\"${3|false,true|}\">",
+      "  <mdb-navbar-brand><a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a></mdb-navbar-brand>",
+      "  <links>",
+      "      <ul class=\"navbar-nav mr-auto\">",
+      "          <li class=\"nav-item active\">",
+      "              <a class=\"nav-link waves-light\" href=\"${7:#}\" mdbWavesEffect>${6:Home}<span class=\"sr-only\">(current)</span></a>",
+      "          </li>",
+      "          <li class=\"nav-item\">",
+      "              <a class=\"nav-link waves-light\" href=\"${9:#}\" mdbWavesEffect>${8:Features}</a>",
+      "          </li>",
+      "          <li class=\"nav-item\">",
+      "              <a class=\"nav-link waves-light\" href=\"${11:#}\" mdbWavesEffect>${10:Pricing}</a>",
+      "          </li>",
+      "      </ul>",
+      "  </links>",
+      "</mdb-navbar>$12",
+      ""
+    ],
+    "description": "MDB Hamburger Menu"
+  },
+  "MDB Navs": {
+    "prefix": "a-mdb-navs",
+    "body": [
+      "<ul class=\"nav ${1:grey lighten-4} py-4\">",
+      "    <li class=\"nav-item\">",
+      "        <a class=\"nav-link active\" href=\"${3:#}\">${2:Active}</a>",
+      "    </li>",
+      "    <li class=\"nav-item\">",
+      "        <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>",
+      "    </li>",
+      "    <li class=\"nav-item\">",
+      "        <a class=\"nav-link\" href=\"${7:#}\">${6:Link}</a>",
+      "    </li>",
+      "    <li class=\"nav-item\">",
+      "        <a class=\"nav-link disabled\" href=\"${9:#}\">${8:Disabled}</a>",
+      "    </li>",
+      "</ul>$10"
+    ],
+    "description": "MDB Navs"
+  },
+  "MDB Basic Navbar": {
+    "prefix": "a-mdb-navbar-basic",
+    "body": [
+      "<mdb-navbar SideClass=\"navbar navbar-expand-${1|sm,md,lg|} navbar-${2|dark,light|} ${3:indigo}\">",
+      "    <mdb-navbar-brand><a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a></mdb-navbar-brand>",
+      "    <links>",
+      "        <ul class=\"navbar-nav mr-auto\">",
+      "            <li class=\"nav-item active\">",
+      "                <a class=\"nav-link waves-light\" href=\"${7:#}\" mdbWavesEffect>${6:Home}<span class=\"sr-only\">(current)</span></a>",
+      "            </li>",
+      "            <li class=\"nav-item\">",
+      "                <a class=\"nav-link waves-light\" href=\"${9:#}\" mdbWavesEffect>${8:Features}</a>",
+      "            </li>",
+      "            <li class=\"nav-item\">",
+      "                <a class=\"nav-link waves-light\" href=\"${11:#}\" mdbWavesEffect>${10:Pricing}</a>",
+      "            </li>",
+      "            <li class=\"nav-item dropdown\" mdbDropdown>",
+      "                <a mdbDropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>",
+      "                ${12:Basic dropdown}<span class=\"caret\"></span></a>",
+      "                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">",
+      "                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"${14:#}\">${13:Action}</a>",
+      "                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"${16:#}\">${15:Another action}</a>",
+      "                </div>",
+      "            </li>",
+      "        </ul>",
+      "        <form class=\"form-inline waves-light\" mdbWavesEffect>",
+      "            <div class=\"md-form my-0\">",
+      "                <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">",
+      "            </div>",
+      "        </form>",
+      "    </links>",
+      "</mdb-navbar>$17"
+    ],
+    "description": "MDB Basic Navbar"
+  },
+  "MDB Basic Sidenav": {
+    "prefix": "a-mdb-sidenav-basic",
+    "body": [
+      "<a (click)=\"sidenav.toggle()\" class=\"btn btn-primary p-3 button-collapse\"><i class=\"fas fa-bars\"></i></a>",
+      "",
+      "<mdb-side-nav #sidenav [fixed]=\"${1|true,false|}\" class=\"${2:fixed}\">",
+      "  <li>",
+      "    <div class=\"logo-wrapper waves-light\">",
+      "      <a href=\"${4:#}\"><img src=\"${3:https://mdbootstrap.com/img/logo/mdb-transparent.png}\" class=\"img-fluid flex-center\"></a>",
+      "    </div>",
+      "  </li>",
+      "  <li>",
+      "    <ul class=\"social\">",
+      "      <li><a class=\"icons-sm fb-ic\"><i class=\"fab fa-facebook-f\"> </i></a></li>",
+      "      <li><a class=\"icons-sm pin-ic\"><i class=\"fab fa-pinterest\"> </i></a></li>",
+      "      <li><a class=\"icons-sm gplus-ic\"><i class=\"fab fa-google-plus\"> </i></a></li>",
+      "      <li><a class=\"icons-sm tw-ic\"><i class=\"fab fa-twitter\"> </i></a></li>",
+      "    </ul>",
+      "  </li>",
+      "  <li>",
+      "    <form class=\"search-form\" role=\"search\">",
+      "      <div class=\"form-group md-form waves-light\" mdbWavesEffect>",
+      "        <input type=\"text\" class=\"form-control\" placeholder=\"Search\">",
+      "      </div>",
+      "    </form>",
+      "  </li>",
+      "  <li>",
+      "    <ul class=\"collapsible collapsible-accordion\">",
+      "      <mdb-accordion [multiple]=\"false\" aria-multiselectable=\"false\">",
+      "        <mdb-accordion-item>",
+      "          <mdb-accordion-item-head mdbWavesEffect><i class=\"fas fa-chevron-right\"></i>${5:Collapsible menu}",
+      "          </mdb-accordion-item-head>",
+      "          <mdb-accordion-item-body>",
+      "            <ul>",
+      "              <li><a href=\"${7:#}\" mdbWavesEffect>${6:Link 1}</a></li>",
+      "              <li><a href=\"${9:#}\" mdbWavesEffect>${8:Link 2}</a></li>",
+      "            </ul>",
+      "          </mdb-accordion-item-body>",
+      "        </mdb-accordion-item>",
+      "        <mdb-accordion-item class=\"no-collase\">",
+      "          <mdb-accordion-item-head mdbWavesEffect><i class=\"far fa-hand-pointer\"></i>${10:Simple link}",
+      "          </mdb-accordion-item-head>",
+      "          <mdb-accordion-item-body></mdb-accordion-item-body>",
+      "        </mdb-accordion-item>",
+      "      </mdb-accordion>",
+      "    </ul>",
+      "  </li>",
+      "  <div class=\"sidenav-bg mask-strong\"></div>",
+      "</mdb-side-nav>$11"
+    ],
+    "description": "MDB Basic Sidenav"
+  },
+  "MDB Input": {
+    "prefix": "a-mdb-input",
+    "body": [
+      "<div class=\"md-form\">",
+      "  <input mdbInput type=\"text\" id=\"${1:form1}\" class=\"form-control\">",
+      "  <label for=\"${1:form1}\">${2:Example label}</label>",
+      "</div>$3"
+    ],
+    "description": "MDB Input"
+  },
+  "MDB Select": {
+    "prefix": "a-mdb-select",
+    "body": [
+      "<mdb-select [options]=\"${1:optionsSelect}\" placeholder=\"${2:Choose your option}\" label=\"${3:Example label}\"></mdb-select>$4"
+    ],
+    "description": "MDB Select"
+  },
+  "MDB Multiselect": {
+    "prefix": "a-mdb-multiselect",
+    "body": [
+      "<mdb-select [multiple]=\"true\" [options]=\"${1:optionsSelect}\" placeholder=\"${2:Choose your option}\" label=\"${3:Example label}\"></mdb-select>$4"
+    ],
+    "description": "MDB Multiselect"
+  },
+  "MDB Search": {
+    "prefix": "a-mdb-search",
+    "body": [
+      "<form class=\"form-inline waves-light\" mdbWavesEffect>",
+      "  <div class=\"md-form mt-0\">",
+      "    <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${1:Search}\">",
+      "  </div>",
+      "</form>$2"
+    ],
+    "description": "MDB Search"
+  },
+  "MDB Default Slider": {
+    "prefix": "a-mdb-slider-default",
+    "body": [
+      "<mdb-range-input default=\"true\" min=\"${1:0}\" max=\"${2:100}\"></mdb-range-input>$3"
+    ],
+    "description": "MDB Default Slider"
+  },
+  "MDB Material Slider": {
+    "prefix": "a-mdb-slider-material",
+    "body": [
+      "<mdb-range-input min=\"${1:0}\" max=\"${2:100}\"></mdb-range-input>$3"
+    ],
+    "description": "MDB Material Slider"
+  },
+  "MDB Default Switch": {
+    "prefix": "a-mdb-switch-default",
+    "body": [
+      "<div class=\"custom-control custom-switch\">",
+      "  <input type=\"checkbox\" class=\"custom-control-input\" id=\"${1:customSwitches}\">",
+      "  <label class=\"custom-control-label\" for=\"${1:customSwitches}\">${2:Toggle this switch element}</label>",
+      "</div>$3"
+    ],
+    "description": "MDB Default Switch"
+  },
+  "MDB Material Switch": {
+    "prefix": "a-mdb-switch-material",
+    "body": [
+      "<div class=\"switch\">",
+      "  <label>",
+      "    ${1:Off}",
+      "    <input type=\"checkbox\">",
+      "    <span class=\"lever\"></span> ${2:On}",
+      "  </label>",
+      "</div>$3"
+    ],
+    "description": "MDB Material Switch"
+  },
+  "MDB Textarea": {
+    "prefix": "a-mdb-textarea",
+    "body": [
+      "<div class=\"md-form\">",
+      "  <textarea type=\"text\" id=\"${1:form1}\" class=\"md-textarea form-control\" mdbInput></textarea>",
+      "  <label for=\"${1:form1}\">${3:Basic textarea}</label>",
+      "</div>$4"
+    ],
+    "description": "MDB Textarea"
+  },
+  "MDB Time Picker": {
+    "prefix": "a-mdb-time-picker",
+    "body": [
+      "<mdb-time-picker [buttonLabel]=\"${1:'Done'}\" [twelvehour]=\"${2|false,true|}\" [darktheme]=\"${3|false,true|}\" [placeholder]=\"${4:'Selected time'}\" [label]=\"${5:'Example label'}\"></mdb-time-picker>$6"
+    ],
+    "description": "MDB Time Picker"
+  },
+  "MDB Basic Modal": {
+    "prefix": "a-mdb-modal-basic",
+    "body": [
+      "<button type=\"button\" mdbBtn color=\"primary\" class=\"relative waves-light\" (click)=\"basicModal.show()\" mdbWavesEffect>${1:Launch demo modal}</button>",
+      "",
+      "<div mdbModal #basicModal=\"mdbModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myBasicModalLabel\" aria-hidden=\"true\">",
+      "  <div class=\"modal-dialog\" role=\"document\">",
+      "    <div class=\"modal-content\">",
+      "      <div class=\"modal-header\">",
+      "        <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"basicModal.hide()\">",
+      "          <span aria-hidden=\"true\">×</span>",
+      "        </button>",
+      "        <h4 class=\"modal-title w-100\" id=\"myModalLabel\">${2:Modal title}</h4>",
+      "      </div>",
+      "      <div class=\"modal-body\">",
+      "        ${3:...}",
+      "      </div>",
+      "      <div class=\"modal-footer\">",
+      "        <button type=\"button\" mdbBtn color=\"secondary\" class=\"waves-light\" aria-label=\"Close\" (click)=\"basicModal.hide()\" mdbWavesEffect>${4:Close}</button>",
+      "        <button type=\"button\" mdbBtn color=\"primary\" class=\"relative waves-light\" mdbWavesEffect>${5:Save changes}</button>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>$6"
+    ],
+    "description": "MDB Basic Modal"
+  },
+  "MDB Cookies Modal": {
+    "prefix": "a-mdb-modal-cookies",
+    "body": [
+      "<button type=\"button\" mdbBtn color=\"primary\" class=\"waves-light\" data-toggle=\"modal\" data-target=\"#basicExample\"",
+      "  (click)=\"frame.show()\" mdbWavesEffect>",
+      "  ${1:Open modal}",
+      "</button>",
+      "",
+      "<div mdbModal #frame=\"mdbModal\" class=\"modal fade bottom modal-scrolling\" id=\"frameModalTop\" tabindex=\"-1\"",
+      "  role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\" [config]=\"{backdrop: false, ignoreBackdropClick: true}\">",
+      "  <div class=\"modal-dialog modal-frame modal-bottom modal-notify modal-info\" role=\"document\">",
+      "    <div class=\"modal-content\">",
+      "      <div class=\"modal-body\">",
+      "        <div class=\"row d-flex justify-content-center align-items-center\">",
+      "          <p class=\"pt-3 pr-2\">${2:We use cookies to improve your website experience}</p>",
+      "          <a type=\"button\" mdbBtn color=\"primary\" class=\"waves-light\" mdbWavesEffect>${3:Learn more}",
+      "            <i class=\"fas fa-book ml-1\"></i>",
+      "          </a>",
+      "          <a type=\"button\" mdbBtn color=\"primary\" outline=\"true\" class=\"waves-light\" mdbWavesEffect",
+      "            data-dismiss=\"modal\" (click)=\"frame.hide()\">${4:Ok, thanks}</a>",
+      "        </div>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>$5"
+    ],
+    "description": "MDB Cookies Modal"
+  }
+}
