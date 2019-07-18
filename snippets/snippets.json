@@ -10,18 +10,19 @@
     "prefix": "a-mdb-card",
     "body": [
       "<mdb-card>",
-      "  <mdb-card-img src=\"${1:https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg}\" alt=\"$2\"></mdb-card-img>",
+      "  <mdb-card-img src=\"${1:https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg}\" alt=\"${2:Card image cap}\"></mdb-card-img>",
       "  <mdb-card-body>",
-      "",
       "    <mdb-card-title>",
-      "      <h4>$3</h4>",
+      "      <h4>${3:Card Title}</h4>",
       "    </mdb-card-title>",
       "",
-      "    <mdb-card-text>$4</mdb-card-text>",
+      "    <mdb-card-text>${4:Some quick example text to build on the card title and make up the bulk of the card's",
+      "      content.}",
+      "    </mdb-card-text>",
       "",
-      "    $5",
+      "    <a href=\"${6:#}\" mdbBtn color=\"primary\" mdbWavesEffect>${5:Button}</a>",
       "  </mdb-card-body>",
-      "</mdb-card>$6"
+      "</mdb-card>"
     ],
     "description": "MDB Card"
   },
@@ -62,11 +63,13 @@
     "prefix": "a-mdb-jumbotron",
     "body": [
       "<div class=\"jumbotron\">",
-      "  <h1 class=\"display-4\">$1</h1>",
-      "  <p class=\"lead\">$2</p>",
+      "  <h1 class=\"display-4\">${1:Hello, world!}</h1>",
+      "  <p class=\"lead\">${2:This is a simple hero unit, a simple jumbotron-style component for calling extra attention to",
+      "    featured content or information.}</p>",
       "  <hr class=\"my-4\">",
-      "  <p>$3</p>",
-      "</div>$4"
+      "  <p>${3:It uses utility classes for typography and spacing to space content out within the larger container.}</p>",
+      "  <a mdbBtn color=\"primary\" size=\"lg\" href=\"${5:#}\" role=\"button\" mdbWavesEffect>${4:Learn more}</a>",
+      "</div>$6"
     ],
     "description": "MDB Jumbotron"
   },
@@ -74,8 +77,12 @@
     "prefix": "a-mdb-list-group",
     "body": [
       "<ul class=\"list-group\">",
-      "  <li class=\"list-group-item\">$1</li>",
-      "</ul>$2"
+      "  <li class=\"list-group-item\">${1:Cras justo odio}</li>",
+      "  <li class=\"list-group-item\">${2:Dapibus ac facilisis in}</li>",
+      "  <li class=\"list-group-item\">${3:Morbi leo risus}</li>",
+      "  <li class=\"list-group-item\">${4:Porta ac consectetur ac}</li>",
+      "  <li class=\"list-group-item\">${5:Vestibulum at eros}</li>",
+      "</ul>$6"
     ],
     "description": "MDB List Group"
   },
@@ -101,14 +108,16 @@
       "<mdb-card>",
       "  <mdb-card-body>",
       "    <mdb-card-title>",
-      "      <h4>$1</h4>",
+      "      <h4>${1:Panel title}</h4>",
       "    </mdb-card-title>",
-      "    <mdb-card-text>$2</mdb-card-text>",
+      "    <mdb-card-text>${2:Some quick example text to build on the card title and make up the bulk of the card's",
+      "      content.}</mdb-card-text>",
       "    <div class=\"flex-row\">",
-      "      $3",
+      "      <a href=\"${5:#}\" class=\"card-link\">${3:Card link}</a>",
+      "      <a href=\"${6:#}\" class=\"card-link\">${5:Another link}</a>",
       "    </div>",
       "  </mdb-card-body>",
-      "</mdb-card>$4"
+      "</mdb-card>$7"
     ],
     "description": "MDB Panel"
   },
@@ -146,23 +155,22 @@
   "MDB Tabset": {
     "prefix": "a-mdb-tabset",
     "body": [
-      "<mdb-tabset [buttonClass]=\"'md-tabs tabs-3'\" [contentClass]=\"'card'\">",
-      "$1",
-      "</mdb-tabset>"
+      "<mdb-tabset #staticTabs [buttonClass]=\"'md-tabs tabs-3'\" [contentClass]=\"'card'\">$1</mdb-tabset>"
     ],
     "description": "MDB Tabset"
   },
   "MDB Tab": {
     "prefix": "a-mdb-tab",
     "body": [
-      "  <mdb-tab heading=\"$1\">",
-      "    <div class=\"row\">",
-      "      <div class=\"${2:col-12}\">",
-      "        <br>",
-      "        <p>$3</p>",
-      "      </div>",
+      "<mdb-tab heading=\"${1:Title}\">",
+      "  <div class=\"row\">",
+      "    <div class=\"${2:col-12}\">",
+      "      <p>${3:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus",
+      "        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione",
+      "        porro voluptate odit minima.}</p>",
       "    </div>",
-      "  </mdb-tab>$4"
+      "  </div>",
+      "</mdb-tab>"
     ],
     "description": "MDB Tab"
   },
@@ -176,31 +184,36 @@
   "MDB Accordion": {
     "prefix": "a-mdb-accordion",
     "body": [
-      "<mdb-accordion [multiple]=\"${1|false,true|}\">",
-      "$2",
-      "</mdb-accordion>$3"
+      "<mdb-accordion [multiple]=\"${1|false,true|}\">$2</mdb-accordion>"
     ],
     "description": "MDB Accordion"
   },
   "MDB Accordion Item": {
     "prefix": "a-mdb-accordion-item",
     "body": [
-      "<mdb-accordion-item>",
-      "  <mdb-accordion-item-head>$1</mdb-accordion-item-head>",
-      "  <mdb-accordion-item-body>$2</mdb-accordion-item-body>",
-      "</mdb-accordion-item>$3"
+      "<mdb-accordion-item [collapsed]=\"${1|false,true|}\">",
+      "  <mdb-accordion-item-head>${2:Heading}</mdb-accordion-item-head>",
+      "  <mdb-accordion-item-body>${3:Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,",
+      "      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt",
+      "      aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft",
+      "      beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat",
+      "      craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable",
+      "      VHS.}",
+      "  </mdb-accordion-item-body>",
+      "</mdb-accordion-item>"
     ],
     "description": "MDB Accordion Item"
   },
   "MDB Collapse": {
     "prefix": "a-mdb-collapse",
     "body": [
-      "<button mdbBtn color=\"primary\" class=\"waves-light\" type=\"button\" (click)=\"collapse.toggle()\" mdbWavesEffect>",
-      "  $1",
+      "<button mdbBtn color=\"primary\" class=\"waves-light\" type=\"button\" (click)=\"test.toggle()\" mdbWavesEffect>",
+      "  ${1:Toggle collapse}",
       "</button>",
       "",
-      "<div mdbCollapse #collapse=\"bs-collapse\">",
-      "  <p>$2</p>",
+      "<div mdbCollapse #test=\"bs-collapse\">",
+      "  <p>${2:Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim",
+      "    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.}</p>",
       "</div>$3"
     ],
     "description": "MDB Collapse"
