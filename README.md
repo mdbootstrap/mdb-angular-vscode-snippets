@@ -5,13 +5,6 @@ This extension adds snippets for MDB Angular - Angular Bootstrap UI KIT
 <!-- ![Usage](https://github.com/mdbootstrap/mdb-angular-vscode-snippets/raw/master/images/snippets-usage.gif) -->
 ![Usage](./images/snippets-usage.gif)
 
-## Installation
-
-1. Launch Visual Studio Code
-2. Open Extensions panel by pressing `Ctrl`+`Shift`+`X` (Windows, Linux) or `Ctrl`+`Shift`+`X` and search for `MDB Angular Snippets`
-3. Click on the `install` button
-4. Reload Visual Studio Code
-
 ## Usage
 
 Type part of snippet selector and press `enter`.
